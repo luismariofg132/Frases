@@ -6,18 +6,10 @@ const Quote = ({ quote, handleNewQuote }) => {
             <p id="text">{quote.text}</p>
             <h2 id="author">{quote.author}</h2>
             <div className="actions">
-                <button
-                    id="new-quote"
-                    className="button"
-                    onClick={handleNewQuote}
-                >
+                <button id="new-quote" className="button" onClick={handleNewQuote} >
                     New Quote
                 </button>
-                <a
-                    href="https://twitter.com/intent/tweet"
-                    id="tweet-quote"
-                    target="_blank"
-                >
+                <a target="_blank" rel="noreferrer" href="https://twitter.com/intent/tweet" id="tweet-quote" >
                     Tweet
                 </a>
             </div>
